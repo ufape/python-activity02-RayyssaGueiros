@@ -37,12 +37,12 @@ def main():
       i = i + 1
     return print("Você digitou " + str(j) + " valores pares.")
 
-  a = input("Digite o valor 1/6: ")
-  b = input("Digite o valor 2/6: ")
-  c = input("Digite o valor 3/6: ")
-  d = input("Digite o valor 4/6: ")
-  f = input("Digite o valor 5/6: ")
-  g = input("Digite o valor 6/6: ")
+  a = int(input("Digite o valor 1/6: "))
+  b = int(input("Digite o valor 2/6: "))
+  c = int(input("Digite o valor 3/6: "))
+  d = int(input("Digite o valor 4/6: "))
+  f = int(input("Digite o valor 5/6: "))
+  g = int(input("Digite o valor 6/6: "))
 
   quarto(a, b, c, d, f, g)
 

@@ -42,10 +42,10 @@ def main():
     else:
       return print("Valores recusados.")
 
-  a = input("Digite o valor A: ")
-  b = input("Digite o valor B: ")
-  c = input("Digite o valor C: ")
-  d = input("Digite o valor D: ")
+  a = int(input("Digite o valor A: "))
+  b = int(input("Digite o valor B: "))
+  c = int(input("Digite o valor C: "))
+  d = int(input("Digite o valor D: "))
 
   primeiro(a, b, c, d)
   
