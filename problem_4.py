@@ -4,7 +4,6 @@
 # UAG00098
 # Problem Set 2 - Problem 3
 # Description:
-
 """
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -28,8 +27,25 @@ Você digitou 3 valores pares.
 
 
 def main():
-    pass  # your code here
+
+  def quarto(a, b, c, d, f, g):
+    lista = [a, b, c, d, f, g]
+    j = 0
+    for i in range(len(lista)):
+      if lista[i] % 2 == 0:
+        j = j + 1
+      i = i + 1
+    return print("Você digitou " + str(j) + " valores pares.")
+
+  a = input("Digite o valor 1/6: ")
+  b = input("Digite o valor 2/6: ")
+  c = input("Digite o valor 3/6: ")
+  d = input("Digite o valor 4/6: ")
+  f = input("Digite o valor 5/6: ")
+  g = input("Digite o valor 6/6: ")
+
+  quarto(a, b, c, d, f, g)
 
 
 if __name__ == '__main__':
-    main()
+  main()

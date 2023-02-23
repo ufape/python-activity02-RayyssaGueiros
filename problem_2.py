@@ -1,10 +1,10 @@
+import math
 # -*- coding: utf-8 -*-
 
 # YOUR FULL NAME
 # UAG00098
 # Problem Set 2 - Problem 2
 # Description:
-
 """
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -26,8 +26,26 @@ R2 = -2.712
 
 
 def main():
-    pass  # your code here
+
+  def segundo(a, b, c):
+    d = (b**2) - 4 * c * a
+    if d < 0:
+      return print("Impossível calcular.")
+    elif a == 0:
+      return print("Impossível calcular.")
+    else:
+      pr = (-b + math.sqrt(d)) / (2 * a)
+      sr = (-b - math.sqrt(d)) / (2 * a)
+      r1 = "{:.3f}".format(pr)
+      r2 = "{:.3f}".format(sr)
+      return print("R1 = " + r1), print("R2 = " + r2)
+
+  a = float(input("Digite o valor A: "))
+  b = float(input("Digite o valor B: "))
+  c = float(input("Digite o valor C: "))
+
+  segundo(a, b, c)
 
 
 if __name__ == '__main__':
-    main()
+  main()

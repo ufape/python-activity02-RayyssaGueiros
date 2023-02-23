@@ -4,7 +4,6 @@
 # UAG00098
 # Problem Set 2 - Problem 1
 # Description:
-
 """
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -36,8 +35,19 @@ Valores aceitos.
 
 
 def main():
-    pass  # your code here
 
+  def primeiro(a, b, c, d):
+    if b > c and d > a and c + d > a + b and c > 0 and d > 0 and a % 2 == 0:
+      return print("Valores aceitos.")
+    else:
+      return print("Valores recusados.")
 
+  a = input("Digite o valor A: ")
+  b = input("Digite o valor B: ")
+  c = input("Digite o valor C: ")
+  d = input("Digite o valor D: ")
+
+  primeiro(a, b, c, d)
+  
 if __name__ == '__main__':
-    main()
+  main()

@@ -4,7 +4,6 @@
 # UAG00098
 # Problem Set 2 - Problem 3
 # Description:
-
 """
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -36,8 +35,23 @@ Fora de intervalo.
 
 
 def main():
-    pass  # your code here
+
+  def terceiro(a):
+    if a > 0 and a < 25:
+      return print("Intervalo (0, 25]")
+    elif a > 25 and a < 50:
+      return print("Intervalo (25, 50]")
+    elif a > 50 and a < 75:
+      return print("Intervalo (50, 75]")
+    elif a > 75 and a < 100:
+      return print("Intervalo (75, 100]")
+    else:
+      return print("Fora de intervalo.")
+
+  a = float(input("Digite o valor: "))
+
+  terceiro(a)
 
 
 if __name__ == '__main__':
-    main()
+  main()
